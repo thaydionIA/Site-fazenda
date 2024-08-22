@@ -1,0 +1,44 @@
+:root {/* Aqui São os principais elemento que utilizei no site */
+    --cor-primaria: #2a9d8f;
+    --cor-secundaria:#004d00 ;
+    --text-color: #333;
+    --light-bg: #bbf2ec;
+    --dark-bg: #f4f4f4;
+    --border-radius: 20px;
+    --shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+* {/* Todo O Site */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;/* Fonte Do Site */
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom right, var(--light-bg), var(--dark-bg));/* Aqui São as Cores De Fundo */
+    color: var(--text-color);
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+main {
+    padding: 20px;
+    transition: margin-right 0.3s;
+    margin-right: 0;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;/*Cor dos icones Das Redes Sociais */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 32px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,59 @@
+.container {/* Muda a Posição do Menu  */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-image: url('../images/11.jpg');/* Imagem De fundo Da Aba Do Cabeçalho  */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Padding geral */
+}
+
+.header-content .logo {
+    max-width: 100px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.header-content h1 {/* Configuração do texto do Cabeçalho */
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;/* Padding geral */
+}
+
+.menu-toggle {/* Icone do Menu  */
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+footer { /* Rodapé do Site */
+    background-image: url('../images/11.jpg'); /* Imagem de fundo para o footer */
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
+}
+
+footer h3 {/* Estilos dos Textos do Rodapé do Site */
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,55 @@
+.sidebar { /* Essa é a Aba que abre quando o icone do menu é Ativado */
+    width: 250px;
+    background-image: url('../images/11.jpg');/* Imagem De fundo Da Aba De Menu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-right: 2px solid rgba(42, 157, 143, 0.9);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.close-menu {/* Menu  */
+    background: transparent;
+    border: none;
+    color: #fff;/* Cor do Menu  */
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.sidebar nav ul li a:hover {
+    color: var(--cor-secundaria);
+}

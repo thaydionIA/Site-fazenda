@@ -1,0 +1,59 @@
+.slideshow-container, .slideshow-container2,.slideshow-container3{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.mySlides,.mySlides2,.mySlides3 {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.mySlides img,.mySlides2 img, .mySlides3 img {/* Imagem dos SlidesShows */
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.dots,.dots2,.dots3 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot,.dot2,.dot3 {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;/* Cor Da Bolinha De Navegação Quando Não Ativada */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,.dot2.active,.dot3.active {
+    background-color: var(--cor-secundaria);/* Cor Da Bolinha De Navegação Quando Ativada */
+}
+
+.fade {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonial-dots {
+    position: absolute; /* Posiciona as bolinhas fora da imagem */
+    bottom: 20px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0;
+    z-index: 1000;
+}

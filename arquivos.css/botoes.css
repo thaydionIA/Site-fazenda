@@ -1,0 +1,16 @@
+.button {/*configurações de todos os botões do site */
+    display: inline-block;
+    background-color: var(--cor-secundaria);/*cor de todos botões*/
+    color: #fff;
+    text-decoration: none; 
+    padding: 16px 32px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color:  #008000;/*ao passar o mouse no botão ele muda para essa cor */
+    transform: translateY(-3px);
+}
