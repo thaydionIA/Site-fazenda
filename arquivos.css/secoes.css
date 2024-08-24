@@ -42,3 +42,6 @@ section p {/* Configuarações dos textos que estão dentro do section */
     font-size: 1.5em;
     color: #555;
 }
+.contact-banner p {
+    text-align: center;
+}
