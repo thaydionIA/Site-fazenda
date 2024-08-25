@@ -2,11 +2,10 @@
     display: none;
 }
 
-/* Controle de visibilidade dos ícones */
 .toggle-text {
     display: block;
     margin-top: 10px;
-    color: #007bff;
+    color: #004d00;
     cursor: pointer;
     font-weight: bold;
 }
@@ -15,22 +14,18 @@
     text-decoration: underline;
 }
 
-/* Mostra o ícone 'mostrar mais' quando o texto está oculto */
 #show-more {
     display: block;
 }
 
-/* Mostra o ícone 'mostrar menos' quando o texto está visível */
 #show-less {
     display: none;
 }
 
-/* Esconde o ícone 'mostrar mais' quando o texto está visível */
 #more-text:not(.hidden) ~ #show-more {
     display: none;
 }
 
-/* Esconde o ícone 'mostrar menos' quando o texto está oculto */
 #more-text.hidden ~ #show-less {
     display: none;
 }
