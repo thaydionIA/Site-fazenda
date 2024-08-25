@@ -25,3 +25,33 @@ document.addEventListener('DOMContentLoaded', function() {
         updateToggleState();
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const moreText2 = document.getElementById('more-text2');
+    const showMore2 = document.getElementById('show-more2');
+    const showLess2 = document.getElementById('show-less2');
+
+    function updateToggleState2() {
+        if (moreText2.classList.contains('hidden2')) {
+            showMore2.style.display = 'block';
+            showLess2.style.display = 'none';
+        } else {
+            showMore2.style.display = 'none';
+            showLess2.style.display = 'block';
+        }
+    }
+
+    updateToggleState2();
+
+    showMore2.addEventListener('click', function() {
+        moreText2.classList.remove('hidden2');
+        updateToggleState2();
+    });
+
+    showLess2.addEventListener('click', function() {
+        moreText2.classList.add('hidden2');
+        updateToggleState2();
+    });
+});

@@ -29,3 +29,42 @@
 #more-text.hidden ~ #show-less {
     display: none;
 }
+.hidden2 {
+    display: none;
+}
+
+.toggle-text2 {
+    display: block;
+    margin-top: 10px;
+    color: #004d00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-text2:hover {
+    text-decoration: underline;
+}
+
+#show-more2 {
+    display: block;
+}
+
+#show-less2 {
+    display: none;
+}
+
+#more-text2:not(.hidden2) ~ #show-more2 {
+    display: none;
+}
+
+#more-text2:not(.hidden2) ~ #show-less2 {
+    display: block;
+}
+
+#more-text2.hidden2 ~ #show-more2 {
+    display: block;
+}
+
+#more-text2.hidden2 ~ #show-less2 {
+    display: none;
+}
